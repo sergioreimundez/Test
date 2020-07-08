@@ -1,0 +1,2 @@
+Get-ADUser -Identity MI17VB -Properties DisplayName, DistinguishedName, LastBadPasswordAttempt, LastLogonDate, LockedOut, Modified, PasswordExpired, PasswordLastSet, PasswordNeverExpires, whenChanged `
+ | Select-Object DisplayName, DistinguishedName, LastBadPasswordAttempt, LastLogonDate, LockedOut, Modified, PasswordExpired, PasswordLastSet, PasswordNeverExpires, whenChanged
