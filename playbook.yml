@@ -1,13 +1,13 @@
 ---
 - hosts: all
   tasks:
-    - name: Install ntpd service
+    - name: Install ntp service
       apt:
-        name: ntpd
+        name: ntp
         state: present
       become: yes
-    - name: Start service ntpd, if not started
+    - name: Start service ntp, if not started
       service:
-        name: ntpd
+        name: ntp
         state: started
       become: yes
