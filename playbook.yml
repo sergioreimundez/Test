@@ -5,7 +5,9 @@
       apt:
         name: ntpdate
         state: present
+      become: yes
     - name: Start service ntpdate, if not started
       service:
         name: ntpdate
         state: started
+      become: yes
