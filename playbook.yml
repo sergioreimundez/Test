@@ -1,11 +1,11 @@
 ---
 - hosts: all
   tasks:
-    - name: Install ntpd service
+    - name: Install ntpdate service
       apt:
-        name: ntpd
+        name: ntpdate
         state: present
-    - name: Start service ntpd, if not started
+    - name: Start service ntpdate, if not started
       service:
-        name: ntpd
+        name: ntpdate
         state: started
